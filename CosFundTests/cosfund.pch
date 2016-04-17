@@ -1,0 +1,202 @@
+//
+//  cosfund.pch
+//  CosFund
+//
+//  Created by vivian on 15/9/22.
+//  Copyright © 2015年 ZFJ. All rights reserved.
+//
+
+#ifndef cosfund_pch
+#define cosfund_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "CHTumblrMenuView.h"
+#import "PersonInfo.h"
+#import "MODropAlertView.h"
+#import "SWTableViewCell.h"
+#import "SDCycleScrollView.h"
+#import "NSString+MD5Addition.h"
+#import "RequestEngine.h"
+#import "BaseViewController.h"
+#import "HENLENSONG.h"
+#import "ReturnCode.h"
+#import "HTTPPostManger.h"
+#import "CosFundPlayer.h"
+#import "UIImageView+WebCache.h"
+#import "OSSHelper.h"
+#import "GifView.h"
+#import "MJRefresh.h"
+#import "UCZProgressView.h"
+#import "UIImageView+LoadDataZFJ.h"
+#import "LoadDataVideoZFJ.h"
+#import "TwoShoppingCartController.h"
+#import "MBProgressHUD+MJ.h"
+#import "MJPhoto.h"
+#import "MJPhotoBrowser.h"
+#import "RightDownView.h"
+#import "AppDelegate.h"
+#import <TAESDK/TAESDK.h>
+#import <ALBBQuPaiPlugin/ALBBQuPaiPluginPluginServiceProtocol.h>
+#endif /* cosfund_pch */
+#import "RequestEngine.h"
+#import "CosFundForVideoCYX.h"
+#import "NSArray+crossing.h"
+#import "MyTabbarViewController.h"
+
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif 
+//AppDelegate代理
+#define SHARED_APPDELEGATE ((AppDelegate *)([UIApplication sharedApplication].delegate))
+
+//当前无网络连接
+#define NONETWORK @"Networkerror"
+
+#import "UIView+Frame.h"
+//屏幕的物理高度和宽度
+#define ScreenWidth    [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight   [UIScreen mainScreen].bounds.size.height
+
+//判断当前设备是否是iOS7
+#define iOS7 [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+//判断当前设备是否是iOS8
+#define iOS8  [[UIDevice currentDevice].systemVersion floatValue] >= 8.0
+
+#define StatusbarSize ((iOS7 && __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_6_1)?20.f:0.f)
+
+// 内容字体大小与颜色;
+#define kLevelOneFont [UIFont systemFontOfSize:16]
+#define kLevelTwoFont [UIFont systemFontOfSize:14]
+#define kLevelThreeFont [UIFont systemFontOfSize:12]
+#define kLevelFourFont [UIFont systemFontOfSize:10]
+
+#define kLevelOneColor [UIColor colorWithRed:58/255.0 green:42/255.0 blue:61/255.0 alpha:1]
+#define kLevelTwoColor [UIColor blackColor]
+#define kLevelThreeColor [UIColor colorWithRed:58/255.0 green:44/255.0 blue:40/255.0 alpha:0.85]
+#define kLevelFourColor [UIColor colorWithRed:136/255.0 green:146/255.0 blue:148/255.0 alpha:1]
+
+//获取RGB颜色
+#define kColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define kColorAlpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define KColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define TCColor kColor(216, 0, 104)
+#define TCColordefault kColor(136 , 130 ,128)
+//字体默认大小
+#define TCColorWords kColor(143, 144 , 145)
+//获取屏幕的宽和高
+#define TCStatusCellMargin 10
+#define TCNameFont [UIFont systemFontOfSize:13]
+#define TCTimeFont [UIFont systemFontOfSize:12]
+#define TCSourceFont CZTimeFont
+#define TCTextFont [UIFont systemFontOfSize:15]
+#define TCScreenW [UIScreen mainScreen].bounds.size.width
+#define TCScreenH [UIScreen mainScreen].bounds.size.height
+
+
+//水印图片
+#define kWaterImage [UIImage imageNamed:@"waterimage"]
+
+//状态栏的高
+#define kStatusHeight   ([[UIApplication sharedApplication] statusBarFrame].size.height)
+// 导航栏的高
+#define kNavigationBarH (self.navigationController.navigationBar.frame.size.height)
+// 状态栏和导航栏的总高
+#define kStatusNaviBarH (kStatusHeight+kNavigationBarH)
+// tabbar的高
+#define kTabbarH 49
+// 分隔线高
+#define kLineH 0.5
+
+#define isIPhone4s ([UIScreen mainScreen].bounds.size.height == 480)
+// 判断是否为iphone5的宏
+#define isIPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
+// 判断是否为iPhone6的宏
+#define isIPhone6 ([UIScreen mainScreen].bounds.size.height == 667)
+// 判断是否为iphone6plus的宏
+#define isIPhone6plus ([UIScreen mainScreen].bounds.size.height == 736)
+
+// 友盟appkey
+#define kUmengAppkey    @"wxae47e428d1369f24"   //企业版
+// 微信AppId
+#define kWXAppId        @"wxae47e428d1369f24"
+// 微信appSecret
+#define kWXAppSecret    @"84fd91cf0bcb738699cb8109552e0b48"
+// 分享回调url
+#define kSharedUrl    @"http://www.cosfund.com"
+
+////微博appKey
+//#define KWBAppkey    @"629416497"
+//#define KWBAppSecret @"55829f818a84358a6c5e4c9542e8fc84"
+
+//QQAppID 企业版
+#define KQQAppID  @"1104946309"
+#define kQQAppID16 @"41dc2485"
+#define KQQAppKEY @"Q3TDP2BxLfD8p4hy"
+
+
+//获取系统的根窗口
+#define TCKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define PlaceholderImage [UIImage imageNamed:@"loding.png"]
+
+
+//警告提示框
+#define Alert(msg) [[[UIAlertView alloc]initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+
+//接口
+
+//#define LOGINURL @"http://testzcapi.cosfund.com/Tran.aspx"
+
+#define LOGINURL @"http://zcapi.cosfund.com/Tran.aspx"
+//应用编号
+#define wAgent  @"8888"
+//#define wAgent  @"6666"  //安卓
+
+//授权密钥
+#define KLicenseKeys  @"a1s2d3f4g5h6"
+//#define KLicenseKeys  @"fa0d5o0c2p1u" //安卓
+
+//密码加密码
+#define KEncryptionCode  @"GDgLwwdK270Qj1w4"
+
+//登录的类型  登录类型  1 qq \2 wechat \3 sina \4 默认方式
+#define KLogInType       @"LogInType"
+
+//第三方登录
+#define KaccessToken     @"accessToken"
+#define KexpirationDate  @"expirationDate"
+#define KiconURL         @"iconURL"
+#define KplatformName    @"platformName"
+#define KprofileURL      @"profileURL"
+#define KuserName        @"userName"
+#define Kusid            @"usid"
+
+
+
+#define KMyappid @"10102"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="RightDownView" id="kbr-xU-gJs" customClass="RightDownView">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="KyK-uV-vgh">
+                    <rect key="frame" x="30" y="30" width="260" height="260"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kXn-2G-tmK">
+                    <rect key="frame" x="35" y="93" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="5Kabei.png"/>
+                </button>
+                <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wB7-MN-xHj">
+                    <rect key="frame" x="31" y="130" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="1Kabei.png"/>
+                </button>
+                <button opaque="NO" tag="302" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m3V-DI-Xtm">
+                    <rect key="frame" x="52" y="60" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="10Kabei.png"/>
+                </button>
+                <button opaque="NO" tag="303" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yUl-5d-ecv">
+                    <rect key="frame" x="90" y="43" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="100Kabei.png"/>
+                </button>
+                <button opaque="NO" tag="304" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u72-nr-06q">
+                    <rect key="frame" x="130" y="33" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="1000Kabei.png"/>
+                </button>
+                <button opaque="NO" tag="305" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="S8c-f3-9xU">
+                    <rect key="frame" x="90" y="90" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="1KabeiBig.png"/>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="BigButton" destination="S8c-f3-9xU" id="ISx-iL-kc7"/>
+                <outlet property="DanMuView" destination="lqC-BY-tRr" id="FB7-FZ-ylq"/>
+                <outlet property="DownView" destination="8e2-RI-DXQ" id="5gj-jK-oxA"/>
+                <outlet property="FiveButton" destination="kXn-2G-tmK" id="ufz-58-dr8"/>
+                <outlet property="GoTopUp" destination="DEk-vu-iKb" id="qHi-UX-9z6"/>
+                <outlet property="MYKaBei" destination="pxc-8W-Tcj" id="lg6-rR-rpP"/>
+                <outlet property="OneButton" destination="wB7-MN-xHj" id="63H-IR-mkD"/>
+                <outlet property="OneHundredButton" destination="yUl-5d-ecv" id="mAf-Ep-nxi"/>
+                <outlet property="OneThousandButton" destination="u72-nr-06q" id="ZA7-qn-nxM"/>
+                <outlet property="RDView" destination="KyK-uV-vgh" id="Oya-ry-nfK"/>
+                <outlet property="ShowDanmu" destination="Ozm-oP-Naq" id="qgz-gq-qwO"/>
+                <outlet property="TenBUtton" destination="m3V-DI-Xtm" id="QUo-h3-De3"/>
+                <outlet property="rankingView" destination="zxr-1D-b5T" id="trx-Uj-Boe"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="100"/>
+        </view>
+        <view contentMode="scaleToFill" id="8e2-RI-DXQ">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的咖贝：100000咖贝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pxc-8W-Tcj">
+                    <rect key="frame" x="177" y="3" width="181" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DEk-vu-iKb">
+                    <rect key="frame" x="384" y="3" width="52" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="去充值">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ozm-oP-Naq">
+                    <rect key="frame" x="132" y="3" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="SV_danmu.png"/>
+                    <connections>
+                        <action selector="DanMuViewClick:" destination="kbr-xU-gJs" eventType="touchUpInside" id="m0I-7V-ngj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="111" y="272.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="lqC-BY-tRr">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-100" y="406"/>
+        </view>
+        <view contentMode="scaleToFill" id="zxr-1D-b5T">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-100" y="557.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1000Kabei.png" width="30" height="30"/>
+        <image name="100Kabei.png" width="30" height="30"/>
+        <image name="10Kabei.png" width="30" height="30"/>
+        <image name="1Kabei.png" width="40" height="40"/>
+        <image name="1KabeiBig.png" width="60" height="60"/>
+        <image name="5Kabei.png" width="30" height="30"/>
+        <image name="SV_danmu.png" width="30" height="30"/>
+    </resources>
+</document>
